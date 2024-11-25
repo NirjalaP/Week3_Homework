@@ -320,3 +320,18 @@ select {
     color: #333;
     font-weight: bold;
 }
+
+/* Time */
+#timeofday{
+    font-family: arial, helvetica, sans-serif;
+    color: #3a3a3a, #125688;
+    background: linear-gradient(0deg, rgba(251, 215, 139, 1) 0%, rgba(118, 213, 245, 1) 100%);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock{
+    color: #125688;
+}

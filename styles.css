@@ -213,6 +213,13 @@ form {
     font-family: Arial, sans-serif;
 }
 
+form .button input{
+    width: 8em;
+    height: 2.5em;
+    font-size: 1.2 em;
+    color: #fff;
+    border: none;
+}
 fieldset {
     border: 1px solid #93d034;
     padding: 20px;

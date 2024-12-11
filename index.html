@@ -60,7 +60,7 @@
       
     <section>
         <ul id="partners">
-            <li class="partner"><img src="images/partner-bustour.png" alt="Partner Bus Tours">
+            <!-- <li class="partner"><img src="images/partner-bustour.png" alt="Partner Bus Tours">
             </li>
             <li class="partner">
             <img src="images/partner-cabinrental.png" alt="Partner Cabin Rental">
@@ -76,7 +76,7 @@
             </li>
             <li class="partner">
             <img src="images/partner-tourgroup.png" alt="Partner Tour Group">
-            </li>
+            </li> -->
             </ul>
     </section>
 
@@ -99,10 +99,10 @@
     
 </footer>
 
-<!-- JavaScript codes -->
+<!-- JavaScript Digital clock -->
 <script>
-    // Create a time data function
-    function currentTime() {
+        // Create a time data function
+        function currentTime() {
         // Declare variables
         var d = new Date(); // Get current date
         var hr = d.getHours(); // Get current hours
@@ -137,7 +137,6 @@
 
         // Adjusted Time Difference Calculation
         // Adjust time difference based on GMT-7 for Pacific Time during daylight savings
-        console.log("ahiahdi", adjTimeDiff)
         if (adjTimeDiff >= 0 && adjTimeDiff < 7) {
             timezone = "PT"; // Pacific Time Zone (GMT-7 during daylight saving time)
         } else if (adjTimeDiff >= 7 && adjTimeDiff < 10) {
@@ -162,7 +161,38 @@
 
     // Run time data function every 1 second
     setInterval(currentTime, 1000);
+
 </script>
+
+<!-- Partners -->
+ <script>
+// Define the list of partners
+const partners = [
+    { src: "images/partner-bustour.png", alt: "Partner Bus Tours" },
+    { src: "images/partner-cabinrental.png", alt: "Partner Cabin Rental" },
+    { src: "images/partner-campingadv.png", alt: "Partner Camping Adventure" },
+    { src: "images/partner-collegetours.png", alt: "Partner College Tours" },
+    { src: "images/partner-rentalbike.png", alt: "Partner Bike Rentals" },
+    { src: "images/partner-tourgroup.png", alt: "Partner Tour Group" }
+];
+
+// Select the existing <ul> by its ID
+const ul = document.getElementById("partners");
+
+// Create and append list items
+partners.forEach(partner => {
+    const li = document.createElement("li");
+    li.classList.add("partner");
+
+    const img = document.createElement("img");
+    img.src = partner.src;
+    img.alt = partner.alt;
+
+    li.appendChild(img);
+    ul.appendChild(li);
+});
+ </script>
+
 
 </body>
 </html>

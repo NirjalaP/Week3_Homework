@@ -69,20 +69,30 @@
                 <option>East Cliff</option>
                 <option>South Cliff</option>
             </select><br>
+            
+            <div class="commentbox">
+                <label>How did you hear about us: </label>
+                <textarea></textarea><br>
+             </div>
 
-            <br>How did you hear about us: <br>
-            <textarea></textarea><br>
+             <!-- Random codes -->
+              <div class="randomcode">
+                <input type="text" name="randomcode" placeholder="Enter characters">
+                <p id="codes"></p>
+              </div>
+
+            <div class="button">
             <input type="submit" value="Inquire">
-
+            </div>
 
         </fieldset>
 
     </form>
-</body>
+
 
 <section>
     <ul id="partners">
-        <li class="partner"><img src="images/partner-bustour.png" alt="Partner Bus Tours">
+        <!-- <li class="partner"><img src="images/partner-bustour.png" alt="Partner Bus Tours">
         </li>
         <li class="partner">
         <img src="images/partner-cabinrental.png" alt="Partner Cabin Rental">
@@ -98,7 +108,7 @@
         </li>
         <li class="partner">
         <img src="images/partner-tourgroup.png" alt="Partner Tour Group">
-        </li>
+        </li> -->
         </ul>
 </section>
 
@@ -119,6 +129,36 @@
     </div>
     
 </footer>
+<!-- Partners -->
+<script>
+    // Define the list of partners
+    const partners = [
+        { src: "images/partner-bustour.png", alt: "Partner Bus Tours" },
+        { src: "images/partner-cabinrental.png", alt: "Partner Cabin Rental" },
+        { src: "images/partner-campingadv.png", alt: "Partner Camping Adventure" },
+        { src: "images/partner-collegetours.png", alt: "Partner College Tours" },
+        { src: "images/partner-rentalbike.png", alt: "Partner Bike Rentals" },
+        { src: "images/partner-tourgroup.png", alt: "Partner Tour Group" }
+    ];
+    
+    // Select the existing <ul> by its ID
+    const ul = document.getElementById("partners");
+    
+    // Create and append list items
+    partners.forEach(partner => {
+        const li = document.createElement("li");
+        li.classList.add("partner");
+    
+        const img = document.createElement("img");
+        img.src = partner.src;
+        img.alt = partner.alt;
+    
+        li.appendChild(img);
+        ul.appendChild(li);
+    });
+     </script>
+    
+</body>
 
 </html>
 

@@ -342,3 +342,20 @@ select {
 #clock{
     color: #125688;
 }
+
+.randomcode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 250px;
+}
+.randomcode input{
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+}
+#codes{
+    background: lightgray;
+    padding: 10px;
+    margin-left: 10px;
+}

@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     
-<body id="contact">
+<body id="contact" onLoad="disableButton(true)">
     <header>
         <div class="main-header">
             <div class="logo">
@@ -77,12 +77,12 @@
 
              <!-- Random codes -->
               <div class="randomcode">
-                <input type="text" name="randomcode" placeholder="Enter characters">
+                <input id="codeentered" type="text" name="randomcode" placeholder="Enter characters">
                 <p id="codes"></p>
               </div>
 
             <div class="button">
-            <input type="submit" value="Inquire">
+            <input id="submit" type="submit" value="Inquire">
             </div>
 
         </fieldset>

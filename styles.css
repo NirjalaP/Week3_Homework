@@ -206,6 +206,16 @@ td:first-child{
     background: #bde1ff;
 }
 
+.tdhighlight {
+    background-color: greenyellow; /* Light yellow background for selected cells */
+    border: 2px solid #ffa500; /* Orange border to indicate selection */
+  }
+  
+  
+  td.selectable {
+    cursor: pointer;
+  }  
+
 /* Contact page */
 form {
     max-width: 90%;

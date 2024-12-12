@@ -206,11 +206,11 @@ td:first-child{
     background: #bde1ff;
 }
 
+/* Week 5 day 1 css for activity */
 .tdhighlight {
     background-color: greenyellow; /* Light yellow background for selected cells */
     border: 2px solid #ffa500; /* Orange border to indicate selection */
   }
-  
   
   td.selectable {
     cursor: pointer;
